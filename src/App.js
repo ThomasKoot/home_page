@@ -5,6 +5,7 @@ import Onderschrift from './components/Onderschrift'
 import PortFolio from './components/PortFolio'
 import Credentials from './components/Credentials.js'
 import About from './components/About'
+import Footer from './components/Footer'
 
 import './App.css';
 
@@ -27,6 +28,8 @@ function App() {
         <PortFolio />
         <About />
         <Credentials />
+       
+        <Footer />
         
 
     </div>

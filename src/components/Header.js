@@ -41,12 +41,12 @@ function Header() {
            
             <img alt="main foto" src={main_foto} style={imgStyle}/>
         
-            <div style={linkBoxStyle}>
+            {/* <div style={linkBoxStyle}>
                 <p>tadaa</p>
             </div>
             <div style={linkBoxStyle}>
                 <p>tadaa</p>
-            </div>
+            </div> */}
             
         </div>
     )

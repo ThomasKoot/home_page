@@ -6,7 +6,6 @@ function About(props) {
     const containerStyle = {
         width: "100%",
         display: "flex",
-        justifyContent: "space-evenly",
         alignItems: "center",
         backgroundColor: baksteen,
         height: 300
@@ -18,11 +17,13 @@ function About(props) {
     
     const imgStyle = {
         height: "100%",
+        marginLeft: "20px",
         marginBottom: 'none'
     }
 
     const contentStyle = {
         width: '50%',
+        marginLeft: "10%",
         textAlign: "left",
         color: "white",
         fontSize: "12px"

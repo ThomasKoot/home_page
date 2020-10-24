@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react'
+import { jasje } from '../style_constants'
 
 import lys_video from '../assets/lys_video.mov'
 
@@ -77,6 +78,7 @@ function PortFolio() {
 
     return (
         <div style={folioContainerStyle}>
+            <h1 style={{color: jasje}}>portfolio</h1>
             <div style={folioRowStyle}>
                 <FolioCard title={"lys"} caption={"wat een verhaal"} source={lys_video}/>
                 <FolioCard title={"bezier"} caption={"mooie lijntjes"} source={lys_video}/>
