@@ -1,24 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import ScrollBox from './components/ScrollBox'
+import Header from './components/Header'
+import Onderschrift from './components/Onderschrift'
+import PortFolio from './components/PortFolio'
+import Credentials from './components/Credentials.js'
+
 import './App.css';
 
 function App() {
+
+  const data = [
+    {name: "javascript", value: "75%"},
+    {name: "react", value: "50%"},
+    {name: "aws", value: "40%"},
+    {name: "pizzabakken", value: "80%"},
+    {name: "koken", value: "70%"},
+    {name: "fietsen", value: "30%"},
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header />
+        <Onderschrift />
+        <ScrollBox data={data}/>
+        <PortFolio />
+        <Credentials />
+        
+
     </div>
   );
 }

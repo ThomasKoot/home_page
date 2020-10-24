@@ -1,0 +1,1 @@
+export const baksteen = "#C3523E"
