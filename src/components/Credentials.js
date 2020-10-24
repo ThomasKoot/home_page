@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { grayScale } from '../utility';
-import { baksteen } from '../style_constants'
 
 function Credentials( props ) {
 
     const [selected, setSelected] = useState(0);
+
 
     function onClick(tab) {
         return function setTab() {
@@ -23,7 +23,6 @@ function Credentials( props ) {
             justifyContent: "center",
             position: "relative",
             top: "1px",
-            zIndex: 2,
             cursor: "pointer",
             borderTopLeftRadius: "5px",
             borderTopRightRadius: "5px"

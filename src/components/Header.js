@@ -3,20 +3,6 @@ import main_foto from '../assets/header_thomas_code.jpg'
 
 function Header() {
 
-    const ref = useRef();
-    const [headerHeight, setHeaderHeight] = useState()
-
-    useEffect(() => {
-        
-        function resizeHeader() {
-            setHeaderHeight(() => ref.current.clientHeight)
-            console.log("resizing header with height " + ref.current.clientHeight)
-        }
-        resizeHeader()
-        window.addEventListener('resize', resizeHeader)
-        return () => window.removeEventListener('resize', resizeHeader)
-    }, [])
-
     const linkBoxStyle = {
         width: "20%",
         height: "10%",
@@ -38,7 +24,7 @@ function Header() {
         display: "flex",
         justifyContent: "space-evenly",
         alignItems: "flex-end",
-        height: headerHeight
+        height: "49.3vw"
     }
 
     const imgStyle = {
@@ -53,7 +39,7 @@ function Header() {
         
         <div className="header" style={headerStyle}>
            
-            <img alt="main foto" src={main_foto} ref={ref} style={imgStyle}/>
+            <img alt="main foto" src={main_foto} style={imgStyle}/>
         
             <div style={linkBoxStyle}>
                 <p>tadaa</p>

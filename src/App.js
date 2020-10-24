@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Onderschrift from './components/Onderschrift'
 import PortFolio from './components/PortFolio'
 import Credentials from './components/Credentials.js'
+import About from './components/About'
 
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
         <Onderschrift />
         <ScrollBox data={data}/>
         <PortFolio />
+        <About />
         <Credentials />
         
 

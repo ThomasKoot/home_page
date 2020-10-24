@@ -33,6 +33,7 @@ function ScrollSlider( { name, n, width, index } ) {
         textAlign: "end",
         marginLeft: pctString(marginLR),
         wordBreak: "break-all",
+        color: "white"
     }
       
     const trackStyle = {
@@ -99,10 +100,13 @@ function ScrollBox ({ data }) {
     const margin = pctString(1/(data.length + (1-barHeight)) * ((1-barHeight)/2))
 
     return (
-        <div className="scroll_box" ref={ref}>
-            <div style={{height: margin}}></div>
-            <ListRenderer data={data} isViewed={isViewed}/>
-            <div style={{height: margin}}></div>
+        <div className="scroll_complete">
+            <h1>vaardigheden</h1>
+            <div className="scroll_box" ref={ref}>
+                <div style={{height: margin}}></div>
+                <ListRenderer data={data} isViewed={isViewed}/>
+                <div style={{height: margin}}></div>
+            </div>
         </div>
     )
 }
