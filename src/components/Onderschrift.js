@@ -1,6 +1,6 @@
 import React from 'react';
 import { baksteen } from '../style_constants'
-import { grayScale } from '../utility'
+
 
 function Onderschrift() {
 

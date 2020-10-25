@@ -6,6 +6,7 @@ import PortFolio from './components/PortFolio'
 import Credentials from './components/Credentials.js'
 import About from './components/About'
 import Footer from './components/Footer'
+import { credentials } from './assets/data'
 
 import './App.css';
 
@@ -27,7 +28,7 @@ function App() {
         <ScrollBox data={data}/>
         <PortFolio />
         <About />
-        <Credentials />
+        <Credentials credentials={credentials} />
        
         <Footer />
         
