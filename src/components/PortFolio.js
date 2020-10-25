@@ -56,7 +56,7 @@ function PortFolio() {
         return (
             <div style={cardContainerStyle} onMouseEnter={()=>setHover(true)} onMouseLeave={() => setHover(false)}>
                 <div style={cardTitleStyle}>{title}</div>
-                
+
                 <div style={cardBodyStyle}>
                     <p style={captionStyle}>{caption}</p>
                     <video autoPlay muted loop src={source} style={videoStyle}/>
@@ -65,9 +65,6 @@ function PortFolio() {
         )
     }
 
-    const folioContainerStyle = {
-        width: "100%",
-    }
 
     const folioRowStyle = {
         display: "flex",
@@ -77,15 +74,17 @@ function PortFolio() {
     }
 
     return (
-        <div style={folioContainerStyle}>
-            <h1 style={{color: jasje}}>portfolio</h1>
-            <div style={folioRowStyle}>
-                <FolioCard title={"lys"} caption={"wat een verhaal"} source={lys_video}/>
-                <FolioCard title={"bezier"} caption={"mooie lijntjes"} source={lys_video}/>
-            </div>
-            <div style={folioRowStyle}>
-                <FolioCard title={"Linear Regression"} caption={"wat een verhaal"} source={lys_video}/>
-                <FolioCard title={"FishSing"} caption={"mooie lijntjes"} source={lys_video}/>
+        <div className="complete_row">
+            <div className="content_div">
+                <h1 style={{color: jasje}}>portfolio</h1>
+                <div style={folioRowStyle}>
+                    <FolioCard title={"lys"} caption={"wat een verhaal"} source={lys_video}/>
+                    <FolioCard title={"bezier"} caption={"mooie lijntjes"} source={lys_video}/>
+                </div>
+                <div style={folioRowStyle}>
+                    <FolioCard title={"Linear Regression"} caption={"wat een verhaal"} source={lys_video}/>
+                    <FolioCard title={"FishSing"} caption={"mooie lijntjes"} source={lys_video}/>
+                </div>
             </div>
         </div>
     )

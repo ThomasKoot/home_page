@@ -44,10 +44,9 @@ function Credentials( props ) {
     }
 
     const containerStyle = {
-        width: "80%",
+        width: "100%",
         height: 400,
         marginBottom: 40,
-        marginLeft: "10%"
     }
 
     const tabRowStyle = {
@@ -65,17 +64,19 @@ function Credentials( props ) {
 
 
     return (
-            <div className="App" style={{width: "100%", alignItems:"flex-start"}}>
-            <h1 style={{color: baksteen, marginLeft:"10%"}}>kwalificaties </h1>
-            <div style={containerStyle}>
-                
-                    <div style={tabRowStyle}>
-                        {renderTabs(["titles", "coursera", "work"])}
-                    </div>
-                    <div style={contentStyle} >
-                    </div>
+        <div className="complete_row">
+            <div className="content_div">
+                <h1 className="header_align_left" style={{color: baksteen}}>kwalificaties </h1>
+                <div style={containerStyle}>
+                    
+                        <div style={tabRowStyle}>
+                            {renderTabs(["titles", "coursera", "work"])}
+                        </div>
+                        <div style={contentStyle} >
+                        </div>
+                </div>
             </div>
-            </div>
+        </div>
 
     )
 }

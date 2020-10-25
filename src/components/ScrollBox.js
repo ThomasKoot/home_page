@@ -4,7 +4,6 @@ import { pctString, grayScale } from '../utility'
 import { baksteen } from '../style_constants'
 
 
-
 // the scrollbox component renders a scrollbox based on a data prop in the following format:
 // {name: "example", value: "23%"}. The width of the sliders is set when the scrollbox comes in view.
 
@@ -31,7 +30,6 @@ function ScrollSlider( { name, n, width, index } ) {
       
     const titleStyle = {
         width: pctString(textWidth - marginLR),
-        textAlign: "end",
         marginLeft: pctString(marginLR),
         wordBreak: "break-all",
         color: "white"
@@ -49,7 +47,7 @@ function ScrollSlider( { name, n, width, index } ) {
 
     return (
         <div style={containerStyle}>
-            <p style={titleStyle}>{name}</p>
+            <p className="scroll_slider_title" style={titleStyle}>{name}</p>
             <div style={trackStyle}>
                 <div style={fillStyle}/>
             </div>
@@ -100,10 +98,10 @@ function ScrollBox ({ data }) {
     const margin = pctString(1/(data.length + (1-barHeight)) * ((1-barHeight)/2))
 
     return (
-        <div className="scroll_complete">
-            <div className="content_div" style={{alignItems: "flex-end"}}>
-                <h1>Vaardigheden</h1>
-    
+        <div className="complete_row scroll_complete">
+            
+            <div className="content_div scroll_content">
+                    <h1 className="header_align_right">Vaardigheden</h1>
                     <div className="scroll_box" ref={ref}>
                         <div style={{height: margin}}></div>
                         <ListRenderer data={data} isViewed={isViewed}/>
