@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef, useEffect, useState  } from 'react';
+import React from 'react';
 import main_foto from '../assets/header_thomas_code.jpg'
 
 function Header() {

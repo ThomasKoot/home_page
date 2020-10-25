@@ -7,12 +7,13 @@ function Onderschrift() {
     const spanStyle = {color: baksteen}
     const textStyle = {
         fontSize: "4.5vw",
-        color: "black"}
+        color: "black",
+        marginTop: "0px"}
     
 
     return (
         <div className="complete_row">
-            <div className="content_div">
+            <div className="content_div subtitle_content">
             <h1 style={textStyle}>Ik ben thomas <span style={spanStyle}>koot</span> {":"} ik schrijf <span style={spanStyle}>code</span></h1>
                 <h4 style={{fontSize: "2.0vw"}}>Ik ben goed met Javascript, React en Amazon Web Services</h4>
             </div>

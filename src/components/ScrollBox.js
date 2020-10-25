@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import { pctString, grayScale } from '../utility'
 import { baksteen } from '../style_constants'
-
+import brains from '../assets/brains.png'
 
 // the scrollbox component renders a scrollbox based on a data prop in the following format:
 // {name: "example", value: "23%"}. The width of the sliders is set when the scrollbox comes in view.
@@ -99,15 +99,16 @@ function ScrollBox ({ data }) {
 
     return (
         <div className="complete_row scroll_complete">
-            
             <div className="content_div scroll_content">
-                    <h1 className="header_align_right">Vaardigheden</h1>
+                <h1 className="header_align_right">Vaardigheden</h1>
+                <div className="scroll_icon_container" >
+                    <img src={brains} className="scroll_icon" alt="brains"/>
                     <div className="scroll_box" ref={ref}>
                         <div style={{height: margin}}></div>
                         <ListRenderer data={data} isViewed={isViewed}/>
                         <div style={{height: margin}}></div>
                     </div>
-                
+                </div>
             </div>
         </div>
     )

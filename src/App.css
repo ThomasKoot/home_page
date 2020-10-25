@@ -13,6 +13,7 @@ h1 {
   color: white;
   width: 100%;
   text-align: center;
+  margin-top: 50px;
 }
 
 h4 {
@@ -23,10 +24,31 @@ h4 {
   width: 80%;
 }
 
+.subtitle_content {
+  margin-top: calc(60px + 5vw);
+  margin-bottom: calc(60px + 5vw);
+}
+
+h4.subtitle {
+  margin-top: 0px;
+}
+
+.scroll_icon {
+  height: 120px;
+  margin-right: 60px;
+}
+
+.scroll_icon_container{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .about_container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
 }
 
 .about_complete {
@@ -35,15 +57,21 @@ h4 {
 
 .about_img {
   height: 100%;
-  margin-right: 20px;
   max-height: 300px;
+  margin-left: 30px;
 }
 
 .about_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 270px;
+  overflow: scroll;
   width: 80%;
   text-align: left;
   color: white;
   font-size: 12px;
+  margin-bottom: 30px;
 }
 
 .scroll_box {
@@ -70,17 +98,18 @@ h4 {
 }
 
 .footer_content {
-  height: 300px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
+  margin-top: 50px;
 }
 
 .social_row {
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .social_icon {
@@ -129,8 +158,6 @@ h4 {
 
 .credential_tabs {
     width: 20%;
-    margin-left: 4%;
-    margin-right: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,6 +226,7 @@ h4 {
 .pill_icon {
   cursor: pointer;
   width: 20px;
+  flex-shrink: 0;
   margin-left: 5%;
   stroke: var(--baksteen); 
   stroke-width: 20;
@@ -206,12 +234,10 @@ h4 {
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: .4s;
-  transition-delay: .4s;
 }
 
 .pill_icon_selected {
   transform: rotate(90deg);
-  transition-delay: 0s;
 }
 
 .pill_title_container {
@@ -222,6 +248,17 @@ h4 {
 
 .title_content {
   text-align: center;
+
+}
+
+.footer_bottom{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+  margin-bottom: 10px;
+
 }
 
 @media screen and (orientation: portrait), (max-width: 700px) {
@@ -231,6 +268,10 @@ h4 {
 
   .scroll_box {
     width: 100%
+  }
+
+  .scroll_icon {
+    display: none;
   }
 
   .about_container {

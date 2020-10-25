@@ -14,6 +14,9 @@ function Footer() {
                 <div className="footer_content">
                     <Social link={gitHubLink} source={gitHubLogo} text="check me on GitHub"/>
                     <Social link={linkedInLink} source={linkedInLogo} text="check me on LinkedIn"/>
+                    <div className="footer_bottom">
+                        <p>© thomas code 2020</p>
+                    </div>
                 </div>
             </div>
         </div>

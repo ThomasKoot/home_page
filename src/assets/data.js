@@ -3,17 +3,17 @@ const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 export const credentials = {
     titles: [ 
         {
-            strong: "MEd - Master of Education in Arts",
+            strong: "Master of Education in Arts",
             p: "ArtEZ Kunstacademie Zwolle",
             caption: loremIpsum,
         },
         {
-            strong: "BMus - Bachelor of Music",
+            strong: "Bachelor of Music (Media Music)",
             p: "ArtEZ Conservatorium Enschede",
             caption: loremIpsum,
         },
         {
-            strong: "BEd - Bachelor of Education in Music",
+            strong: "Bachelor of Education in Music",
             p: "Codarts Hogeschool voor de Kunsten Rotterdam",
             caption: loremIpsum,
         }
