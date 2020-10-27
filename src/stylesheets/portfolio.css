@@ -21,16 +21,18 @@ img.portfolio_selected {
 }
 
 p.portfolio {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    transform: translate(-100%);
-    transition: transform .5s;
-    font-size: 2vw;
+    font-size: 12px;
 }
 
-p.portfolio_selected {
+.portfolio_caption_container {
+    position: absolute;
+    width: 90%;
+    transform: translate(-100%);
+    transition: transform .5s;
+    padding: 5%;
+}
+
+.portfolio_caption_container_selected {
     transform: translate(0%);
 }
 

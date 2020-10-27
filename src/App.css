@@ -22,6 +22,16 @@ h1 {
   margin-top: 50px;
 }
 
+h2 {
+  font-size: 4.5vw;
+  text-align: center;
+}
+
+h2.mobile {
+  font-size: 8vw;
+  display: none;
+}
+
 img.header {
   width: 100%;
 }
@@ -30,6 +40,9 @@ img.header.mobile {
   display: none;
 }
 
+span.red {
+  color: var(--baksteen)
+}
 
 .header_align_right {
   text-align: right;
@@ -41,6 +54,7 @@ img.header.mobile {
 
 h4 {
   text-align: center;
+  font-size: 2.2vw;
 }
 
 .content_div {
@@ -104,6 +118,18 @@ h4.subtitle {
 @media screen and (orientation: portrait), (max-width: 700px) {
   h1, .header_align_left, .header_align_right {
     text-align: center;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  h2.mobile {
+    display: block;
+  }
+
+  h4 {
+    margin-top: var(--horizontalMargin);
   }
 
   img.header.big {

@@ -1,21 +1,16 @@
 import React from 'react';
-import { baksteen } from '../style_constants'
 
 
-function Onderschrift() {
 
-    const spanStyle = {color: baksteen}
-    const textStyle = {
-        fontSize: "4.5vw",
-        color: "black",
-        marginTop: "0px"}
-    
+function Onderschrift() {  
 
     return (
         <div className="complete_row">
             <div className="content_div subtitle_content">
-            <h1 style={textStyle}>Ik ben thomas <span style={spanStyle}>koot</span> {":"} ik schrijf <span style={spanStyle}>code</span></h1>
-                <h4 style={{fontSize: "2.0vw"}}>Ik ben goed met Javascript, React en Amazon Web Services</h4>
+                <h2>Ik ben thomas <span className={"red"}>koot</span> : ik schrijf <span className="red">code</span></h2>
+                <h2 className="mobile">Ik ben thomas <span className={"red"}>koot</span></h2>
+                <h2 className="mobile">ik schrijf <span className="red">code</span></h2>
+                <h4 >Ik ben goed met Javascript, React en Amazon Web Services</h4>
             </div>
         </div>
     )

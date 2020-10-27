@@ -76,11 +76,6 @@ function ScrollBox ({ data }) {
     useEffect(() => {
         const inView = () => ref.current.getBoundingClientRect().top < window.innerHeight;
         
-        if (inView()) {
-            setIsViewed(true);
-            return
-        }
-        
         let cleanUp = () => window.removeEventListener('scroll', handleScroll);
 
         function handleScroll() {
@@ -100,7 +95,7 @@ function ScrollBox ({ data }) {
     return (
         <div className="complete_row scroll_complete">
             <div className="content_div scroll_content">
-                <h1 className="header_align_right">Vaardigheden</h1>
+                <h1 className="header_align_right">Skills</h1>
                 <div className="scroll_icon_container" >
                     <img src={brains} className="scroll_icon" alt="brains"/>
                     <div className="scroll_box" ref={ref}>
