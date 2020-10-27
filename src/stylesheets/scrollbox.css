@@ -1,0 +1,47 @@
+.scroll_box {
+    height: 50vh;
+    width : 60%;
+    margin-bottom: 40px;
+  }
+  
+  .scroll_complete {
+    background-image: url('../assets/pattern-blue.png');
+    background-size: 50vw;
+  }
+
+  .scroll_slider_title {
+    text-align: right;
+  }
+  
+  .scroll_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .scroll_icon {
+    height: 120px;
+    margin-right: 60px;
+  }
+  
+  .scroll_icon_container{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  @media screen and (orientation: portrait), (max-width: 700px) {
+      .scroll_box{
+          width: 100%;
+      }
+
+      .scroll_icon {
+        display: none;
+      }
+    
+      .scroll_slider_title {
+        text-align: left;
+      }
+  }
+  

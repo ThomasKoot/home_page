@@ -1,12 +1,20 @@
-import React, { useState, useLayoutEffect } from 'react'
+import React, { useState, useLayoutEffect, useRef, useEffect } from 'react'
+import { selectedString } from '../utility'
+import DropDownIcon from './DropDownIcon.js';
 
 function Pill ({data}) {
 
-    const [selected, setSelected] = useState()
+    const [selected, setSelected] = useState();
+    const [subTextStyle, setSubTextStyle] = useState();
+    const p = useRef();
 
     useLayoutEffect(() => {
         setSelected(undefined)
     }, [data])
+
+    useEffect(() => {
+        setSubTextStyle (() =>  ({ height: (selected !== undefined ? p.current.clientHeight + 40 : 0)}))
+    }, [data, selected])
 
     function changeSelected(index) {
         return function () {
@@ -15,23 +23,25 @@ function Pill ({data}) {
     }
 
     return (
-        data.map((e, i) => {
+        <>
+        {data.map((e, i) => {
+            const inView = i === selected;
             return (
-            <div className="pill_pane_container" key={e.strong + i}>
-                <div className="pill_title_container"> 
-                    <svg className={"pill_icon" + (i === selected ? " pill_icon_selected" : "")} 
-                        viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
-                        onClick={changeSelected(i === selected ? undefined : i)}>
-                        <polyline points="10,10 80,50 10,90" />
-                    </svg>
-                    <p className="pill_title"><strong>{e.strong}</strong><br></br>{e.p}</p>
+            <div className={"dropdown_item_container" }key={e.strong + i}>
+                <div className="dropdown_item_head_container"> 
+                    <DropDownIcon inView={inView} onClick={changeSelected(inView ? undefined : i)}/>
+                    <p className="dropdown_item_head"><strong>{e.strong}</strong><br></br>{e.p}</p>
                 </div>
-                <div className={"pill_sub_text" + (i === selected ? " pill_sub_text_selected" : "")}>
-                    <p className={"pill_paragraph" + (i === selected ? " pill_paragraph_selected" : "")}>{e.caption}</p>
+                <div className={selectedString("dropdown_item_body_container", inView)}
+                    style={inView ? subTextStyle : {height:0}}>
+                    <p className={selectedString("dropdown_item_body", inView)} ref={inView ? p : undefined}>
+                        {e.caption}
+                    </p>
                 </div>
             </div>
             )
-        })
+        })}
+        </>
     )
 }
 

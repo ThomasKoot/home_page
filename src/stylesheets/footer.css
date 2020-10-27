@@ -1,0 +1,33 @@
+.footer_bottom{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+.footer_content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: var(--horizontalMargin);
+  }
+  
+.social_row {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+  
+.social_icon {
+    width: 30px;
+    height: 30px;
+}
+  
+p.social {
+    margin-left: 10px;
+    color: white;
+}

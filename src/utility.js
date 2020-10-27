@@ -5,3 +5,7 @@ export function pctString(value) {
 export function grayScale(n) {
     return 'rgb(' + n + "," + n + "," + n + ")"
 }
+
+export function selectedString(className, predicate) {
+    return className + (predicate ? " " + className + "_selected" : "")
+}

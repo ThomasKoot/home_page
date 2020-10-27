@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { baksteen } from '../style_constants';
 import Pill from './Pill'
+import { selectedString } from '../utility';
 
 function Credentials( { credentials } ) {
 
@@ -13,13 +13,11 @@ function Credentials( { credentials } ) {
     }
 
     function renderTabs(names) {
-        const n = names.length
-
         return names.map((e, i) => {
 
             return (
                 <div onClick={onClick(i)} 
-                    className={"credential_tabs" + (i === selected ? " selected_tab" : "")}
+                    className={selectedString("tab_title", i === selected)}
                     key={e + i}>{e}</div>
             )
         })
@@ -28,20 +26,17 @@ function Credentials( { credentials } ) {
     return (
         <div className="complete_row">
             <div className="content_div">
-                <h1 className="header_align_left" style={{color: baksteen}}>kwalificaties </h1>
-                <div className="credential_container">
-                        <div className="credential_tab_row">
-                            {renderTabs(Object.keys(credentials))}
-                        </div>
-                        <div className="credential_content" >
-                            <div className="credential_content_div">
-                                <Pill data={credentials[Object.keys(credentials)[selected]]}/>
-                            </div>
-                        </div>
+                <h1 className="header_align_left credentials">CV </h1>
+                <div className="tab_container">
+                    <div className="tab_title_row">
+                        {renderTabs(Object.keys(credentials))}
+                    </div>
+                    <div className="tab_content" >
+                        <Pill data={credentials[Object.keys(credentials)[selected]]}/>
+                    </div>
                 </div>
             </div>
-            </div>
-
+        </div>
     )
 }
 

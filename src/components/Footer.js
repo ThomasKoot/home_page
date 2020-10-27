@@ -12,10 +12,10 @@ function Footer() {
         <div className="complete_row footer_complete">
             <div className="content_div">
                 <div className="footer_content">
-                    <Social link={gitHubLink} source={gitHubLogo} text="check me on GitHub"/>
-                    <Social link={linkedInLink} source={linkedInLogo} text="check me on LinkedIn"/>
+                    <Social link={gitHubLink} source={gitHubLogo} text="bekijk mijn projecten op GitHub"/>
+                    <Social link={linkedInLink} source={linkedInLogo} text="bekijk mijn volledige CV op LinkedIn"/>
                     <div className="footer_bottom">
-                        <p>© thomas code 2020</p>
+                        <p onClick={() => window.scrollTo(0,0)}>© thomas code 2020</p>
                     </div>
                 </div>
             </div>
