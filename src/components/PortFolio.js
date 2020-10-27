@@ -2,7 +2,7 @@ import React from 'react';
 import FolioCard from './FolioCard';
 import linear_regression_demo from '../assets/linear_regression_demo.jpg'
 import lys_demo from '../assets/lys_demo.jpg';
-import fishsing_demo from '../assets/fishsing_demo.jpeg'
+import fishsing_demo from '../assets/fishsing_demo.jpg'
 import pastel_pies_demo from '../assets/pastel_pies_demo.jpg'
 
 function PortFolio() {    
