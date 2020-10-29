@@ -83,7 +83,7 @@ h1.portfolio {
     margin-bottom: var(--horizontalMargin);
 }
 
-@media screen and (orientation: portrait), (max-width: 700px) {
+@media screen and (orientation: portrait), (max-width: 666px) {
     .portfolio_card {
         width: 90%;
         height: 60vw;

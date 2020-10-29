@@ -1,4 +1,4 @@
-import { med, bmus, bed, dj, docent, sd } from './credentials_texts'
+import { med, bmus, bed, dj, docent, sd, reactCourse, mathCourse, awsCourse } from './credentials_texts'
 import linear_regression_demo from '../assets/linear_regression_demo.jpg'
 import lys_demo from '../assets/lys_demo.jpg';
 import fishsing_demo from '../assets/fishsing_demo.jpg'
@@ -9,11 +9,6 @@ const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
 export const credentials = {
     titels: [ 
         {
-            strong: "Master of Education in Arts",
-            p: "ArtEZ Kunstacademie Zwolle",
-            caption: med,
-        },
-        {
             strong: "Bachelor of Music (Media Music)",
             p: "ArtEZ Conservatorium Enschede",
             caption: bmus,
@@ -22,7 +17,12 @@ export const credentials = {
             strong: "Bachelor of Education in Music",
             p: "Codarts Hogeschool voor de Kunsten Rotterdam",
             caption: bed,
-        }
+        },
+        {
+            strong: "Master of Education in Arts",
+            p: "ArtEZ Kunstacademie Zwolle",
+            caption: med,
+        },
     ],
     werk: [
         {
@@ -45,17 +45,20 @@ export const credentials = {
         {
             strong: "Fullstack Web Development with React",
             p: "Hong Kong University of Science & Technology (Coursera)",
-            caption: "De",
+            caption: reactCourse.text,
+            key_skills: reactCourse.key_skills
         },
         {
             strong: "Mathematics for Machine Learning",
             p: "Imperial College London (Coursera)",
-            caption: loremIpsum,
+            caption: mathCourse.text,
+            key_skills: mathCourse.key_skills,
         },
         {
             strong: "Building Modern Node Applications on AWS",
             p: "AWS (Coursera)",
-            caption: loremIpsum,
+            caption: awsCourse.text,
+            key_skills: awsCourse.key_skills,
         }
     ],
 }

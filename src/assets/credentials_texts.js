@@ -10,7 +10,7 @@ export const bmus = `
 `
 
 export const bed = `
-    Afstudeer project 'FishSing', een app waarmee ongeoefende zangers/zangeressen op een ludieke manier hun stem kunnen trainen. 
+    Verkort traject om na een muziek bachelor in twee jaar een eerstegraads lesbevougdheid voor muziek en de kunstvakken te halen. Afstudeer project 'FishSing', een app waarmee ongeoefende zangers/zangeressen op een ludieke manier hun stem kunnen trainen. 
 `
 
 export const dj = `
@@ -25,6 +25,19 @@ export const docent = `
 `
 
 export const sd = `
-    Voor verschillende software synthesizers heb ik presets geprogrammeerd, daarbij was ik regelmatig betrokken bij de testfase van het ontwikkeltraject. Je kunt mijn geluiden onder andere vinden in FM8 en Reaktor van Native Instruments, en Pigments en Synclavier V van Arturia. 
+    Ik heb voor verschillende software-synthesizers presets geprogrammeerd, daarbij was ik regelmatig betrokken bij de testfase van het ontwikkeltraject. Je kunt mijn geluiden onder andere vinden in FM8 en Reaktor van Native Instruments, en Pigments en Synclavier V van Arturia. 
 `
+export const awsCourse = {
+    text: `Na de AWS Fundamentals specialisatie heb ik me in deze course verder verdiept in het AWS serverless aanbod. Deze site is ontwikkeld op AWS-Amplify, en de gelinkte sites uit het portfolio zijn gehost op Amazon S3`,
+    key_skills: "AWS-serverless / AWS-Lambda / NodeJS"
+}
 
+export const reactCourse = {
+    text: `Specialisatie gericht op React, NodeJS, Express en Bootstrap. Veel zaken die ik hiervan heb geleerd komen terug in deze site, die volledig in React is gemaakt.`,
+    key_skills: "React / NodeJS / Express / MongoDB"
+}
+
+export const mathCourse = {
+    text: `Specialisatie in lineare algebra en vector calculus. Daarnaast heb ik Matrix Algebra for Engineers op Coursera afgerond. Naar aanleiding van deze input heb ik een aantal applicaties gemaakt die gebruik maken van lineare algebra. Linear Regression uit mijn portfolio is er daar één van.`,
+    key_skills: "Python / Linear Algebra",
+}

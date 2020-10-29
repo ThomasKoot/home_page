@@ -36,7 +36,7 @@ function Pill ({data}) {
                 <div className={selectedString("dropdown_item_body_container", inView)}
                     style={inView ? subTextStyle : {height:0}}>
                     <p className={selectedString("dropdown_item_body", inView)} ref={inView ? p : undefined}>
-                        {e.caption}
+                        {e.caption} <br></br><br></br> {e.key_skills ? e.key_skills : ""}
                     </p>
                 </div>
             </div>

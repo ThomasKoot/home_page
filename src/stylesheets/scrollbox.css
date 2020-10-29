@@ -37,7 +37,7 @@ h1.scroll_mobile {
     align-items: center;
   }
 
-  @media screen and (orientation: portrait), (max-width: 700px) {
+  @media screen and (orientation: portrait), (max-width: 666px) {
       .scroll_box{
           width: 100%;
       }

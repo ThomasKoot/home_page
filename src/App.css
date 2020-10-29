@@ -16,6 +16,7 @@
   display: flex;
   justify-content: center;
   background-color: rgb(230,230,230);
+  background-image: url('./assets/pattern_white_overlay.png');
 }
 
 html {
@@ -138,7 +139,7 @@ h4.subtitle {
   }
 }
 
-@media screen and (orientation: portrait), (max-width: 700px) {
+@media screen and (orientation: portrait), (max-width: 666px) {
   h1, .header_align_left, .header_align_right {
     text-align: center;
   }
