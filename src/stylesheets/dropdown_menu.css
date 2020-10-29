@@ -21,10 +21,12 @@ p.dropdown_item_body_selected {
     opacity: 1;
     transition: .4s;
     transition-delay: .4s;
+    font-size: 12px;
 }
   
 p.dropdown_item_head {
   margin-left: 5%;
+  cursor: pointer;
 }
   
 .dropdown_icon {

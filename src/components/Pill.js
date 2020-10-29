@@ -26,11 +26,12 @@ function Pill ({data}) {
         <>
         {data.map((e, i) => {
             const inView = i === selected;
+            const onClick = changeSelected(inView ? undefined : i);
             return (
-            <div className={"dropdown_item_container" }key={e.strong + i}>
+            <div className={"dropdown_item_container"}key={e.strong + i}>
                 <div className="dropdown_item_head_container"> 
-                    <DropDownIcon inView={inView} onClick={changeSelected(inView ? undefined : i)}/>
-                    <p className="dropdown_item_head"><strong>{e.strong}</strong><br></br>{e.p}</p>
+                    <DropDownIcon inView={inView} onClick={onClick}/>
+                    <p className="dropdown_item_head" onClick={onClick}><strong>{e.strong}</strong><br></br>{e.p}</p>
                 </div>
                 <div className={selectedString("dropdown_item_body_container", inView)}
                     style={inView ? subTextStyle : {height:0}}>

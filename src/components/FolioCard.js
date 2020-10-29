@@ -1,27 +1,13 @@
 import React, { useState, useRef, useLayoutEffect } from 'react';
-
 import { selectedString } from '../utility'
-import { portfolio } from '../assets/data';
+import PortFolioLink from './PortFolioLink';
 
-function FolioCard( { caption, source, key_skills }) {
+function FolioCard( { data, selected, selectCallback, isMobile }) {
 
-    const [hover, setHover] = useState(false);
-    const [height, setHeight] = useState(0);
+    const { title, text, src, key_skills, link } = data;
 
     const widthRef = useRef();
-
-    function onTouch(e) {
-        if (!hover) {setHover(true)}
-    }
-
-    function onTouchEnd(e) {
-        function cleanUp(e) {
-            console.log("removing listener")
-            setHover(false)
-            window.removeEventListener("touchstart", cleanUp)
-        }
-        window.addEventListener("touchstart", cleanUp)
-    }
+    const [height, setHeight] = useState(0)
 
     useLayoutEffect(() => {
         function adjustHeight() {
@@ -33,24 +19,27 @@ function FolioCard( { caption, source, key_skills }) {
     }, [])
 
     const pStyle = {
-        fontSize: height/17,
+        fontSize: height/20,
         marginRight: "5%",
+    }
+
+    function RenderLink(link) {
+        return link.startsWith("http") ? <PortFolioLink link={link} /> : <p className="no_link">{link}</p>
     }
 
     return (
         <div className="portfolio_card" 
-                onMouseEnter={()=>setHover(true)} 
-                onMouseLeave={() =>setHover(false)}
-                onTouchStart={onTouch}
-                onTouchEnd={hover ? onTouchEnd : null}
+                onMouseEnter={isMobile ? undefined : selectCallback(title)} 
+                onMouseLeave={isMobile ? undefined : selectCallback(undefined)}
+                onClick={isMobile ? selectCallback(selected ? undefined : title) : undefined}
                 style={{height}}
                 ref={widthRef}>
-            <div className={selectedString("portfolio_caption_container", hover)}>
-                <p style={pStyle}>{caption}</p>
+            <div className={selectedString("portfolio_caption_container", selected)}>
+                <p style={pStyle}>{text}</p>
                 <p style={pStyle}>{key_skills}</p>
+                {RenderLink(link)}
             </div>
-
-            <img src={source} className={selectedString("portfolio", hover)}/>
+            <img src={src} className={selectedString("portfolio", selected)}/>
         </div>
     )
 }

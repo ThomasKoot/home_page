@@ -31,17 +31,16 @@ function App() {
   ]
 
   return (
-    <div className="App">
-        <Header />
-        <Onderschrift />
-        <ScrollBox data={data}/>
-        <PortFolio />
-        <About />
-        <Credentials credentials={credentials} />
-       
-        <Footer />
-        
-
+    <div className="screen">
+      <div className="App">
+          <Header />
+          <Onderschrift />
+          <ScrollBox data={data}/>
+          <PortFolio />
+          <About />
+          <Credentials credentials={credentials} />
+          <Footer />
+      </div>
     </div>
   );
 }

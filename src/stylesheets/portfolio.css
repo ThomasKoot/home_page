@@ -1,5 +1,4 @@
 .portfolio_card {
-    border: 1px solid;
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
     width: 45%;
     position: relative;
@@ -7,6 +6,26 @@
     margin-bottom: var(--horizontalMargin);
     border-radius: var(--boxRadius);
   }
+
+.portfolio_link_container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 3%;
+}
+
+.portfolio_link {
+    width: 12%;
+}
+
+p.no_link {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 10px;
+}
 
 img.portfolio {
     position: absolute;
@@ -26,10 +45,27 @@ p.portfolio {
 
 .portfolio_caption_container {
     position: absolute;
+    display: flex;
+    flex-direction: column;
     width: 90%;
     transform: translate(-100%);
     transition: transform .5s;
     padding: 5%;
+    height: 90%;
+}
+
+svg.link_icon {
+    width: 100%;
+    stroke:black;
+    stroke-width: 10;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    cursor: pointer;
+}
+
+g   {
+    transition: all .3s;
 }
 
 .portfolio_caption_container_selected {

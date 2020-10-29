@@ -1,8 +1,12 @@
+h1.scroll_mobile {
+  display: none;
+}
+
 .scroll_box {
-    height: 50vh;
-    width : 60%;
+    height: 300px;
+    width : 100%;
     margin-bottom: 40px;
-  }
+}
   
   .scroll_complete {
     background-image: url('../assets/pattern-blue.png');
@@ -11,22 +15,24 @@
 
   .scroll_slider_title {
     text-align: right;
+    font-size: 15px;
   }
   
   .scroll_content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
   }
 
   .scroll_icon {
-    height: 120px;
+    width: 27%;
     margin-right: 60px;
   }
   
   .scroll_icon_container{
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
   }

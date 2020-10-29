@@ -7,7 +7,7 @@ import pastel_pies_demo from '../assets/pastel_pies_demo.jpg'
 const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
 export const credentials = {
-    titles: [ 
+    titels: [ 
         {
             strong: "Master of Education in Arts",
             p: "ArtEZ Kunstacademie Zwolle",
@@ -24,7 +24,7 @@ export const credentials = {
             caption: bed,
         }
     ],
-    work: [
+    werk: [
         {
             strong: "DJ",
             p: "Verschillende venues in binnen en buitenland",
@@ -44,17 +44,17 @@ export const credentials = {
     eLearning: [
         {
             strong: "Fullstack Web Development with React",
-            p: "Hong Kong University of Science & Technology",
-            caption: loremIpsum,
+            p: "Hong Kong University of Science & Technology (Coursera)",
+            caption: "De",
         },
         {
             strong: "Mathematics for Machine Learning",
-            p: "Imperial College London",
+            p: "Imperial College London (Coursera)",
             caption: loremIpsum,
         },
         {
             strong: "Building Modern Node Applications on AWS",
-            p: "AWS",
+            p: "AWS (Coursera)",
             caption: loremIpsum,
         }
     ],
@@ -68,27 +68,31 @@ export const about = `
 
 export const portfolio = [
         {
-            name: "Lys",
+            title: "Lys",
             text: "Lys is een interactieve web-applicatie voor het genereren van complexe lissajous curves. De applicatie is gebouwd met een Redux-archtectuur en gebruikt naast de Redux state container alleen vanilla-javascript.",
             src: lys_demo,
-            key_skills: "Javascript / Redux / SVG-animation"
+            key_skills: "Javascript / Redux / SVG-animation",
+            link: "http://lys.thomascode.nl"
         },
         {
-            name: "Linear Regression",
+            title: "Linear Regression",
             text: "Linear Regression is een interactieve animatie van het gradient-descent algoritme. Ik heb deze applicatie gemaakt na het volgen van de Mathematics for Machine Learning specialisatie op Coursera.",
             src: linear_regression_demo,
-            key_skills: "P5.js / HTML Canvas"
+            key_skills: "P5.js / HTML Canvas",
+            link: "http://linear-regression.thomascode.nl"
         },
         {   
-            name: "Pastel Pies",
+            title: "Pastel Pies",
             text: "Pastel Pies is een React app voor het maken van pie-charts. Naast React was het een oefening met het gebruik van de Bootstrap library",
             src: pastel_pies_demo,
-            key_skills: "React / Hooks / Bootstrap"
+            key_skills: "React / Hooks / Bootstrap",
+            link: "http://pastel-pies.thomascode.nl"
         },
         {
-            name: "FishSing",
+            title: "FishSing",
             text: "Fishsing was mijn afstudeerproject op het conservatorium van Rotterdam. Het is een variatie op een klassiek spel waarbij een vis andere vissen moet ontwijken. In FishSing bestuur je de vis door hoger of lager te zingen. De toonhoogte en volume-herkenning is geschreven in Reaktor Core",
             src: fishsing_demo,
-            key_skills: "DSP / Reaktor Core"
+            key_skills: "DSP / Reaktor Core",
+            link: "Om FishSing te openen is een Reaktor licentie nodig"
         }
     ]

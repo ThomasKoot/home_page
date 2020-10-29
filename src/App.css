@@ -4,6 +4,18 @@
   --grey: rgb(240,240,240);
   --horizontalMargin: 40px; 
   --boxRadius: 5px;
+  --maxWidth: 1200px;
+}
+
+.App{
+  max-width: 1200px;
+  background-color: white;
+}
+
+.screen{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(230,230,230);
 }
 
 html {
@@ -59,6 +71,7 @@ h4 {
 
 .content_div {
   width: 80%;
+  max-width: var(--maxWidth)
 }
 
 .subtitle_content {
@@ -113,6 +126,16 @@ h4.subtitle {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  h2 {
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (orientation: portrait), (max-width: 700px) {
