@@ -11,7 +11,7 @@ function About(props) {
             <div className="content_div">
                 <div className="about_container">
                     <div className="about_content">
-                        <h1 className="header_align_left">About</h1>
+                        <h1 className="header_align_left">Hallo</h1>
                         <p>{about}</p>
                     </div>
                     <div className="about_img_container">
@@ -19,9 +19,7 @@ function About(props) {
                     </div>
                 </div>
             </div>
-        </div> 
-       
-        
+        </div>    
     )
 }
 

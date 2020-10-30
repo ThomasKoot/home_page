@@ -1,5 +1,5 @@
 .portfolio_card {
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.5);
     width: 45%;
     position: relative;
     overflow: hidden;
@@ -79,7 +79,7 @@ h1.portfolio {
     margin-bottom: var(--horizontalMargin);
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 650px) {
     .portfolio_card {
         width: 90%;
         height: 60vw;

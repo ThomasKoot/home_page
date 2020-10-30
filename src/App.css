@@ -147,7 +147,7 @@ h4.subtitle {
   }
 }
 
-@media screen and (max-width: 666px) {
+@media screen and (max-width: 650px) {
   h1, .header_align_left, .header_align_right {
     text-align: center;
   }
