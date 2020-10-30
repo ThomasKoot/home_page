@@ -24,7 +24,7 @@ function FolioCard( { data, selected, selectCallback, isMobile }) {
     }
 
     function RenderLink(link) {
-        return link.startsWith("http") ? <PortFolioLink link={link} /> : <p className="no_link">{link}</p>
+        return link.startsWith("http") ? <PortFolioLink link={link} /> : <p style={{fontSize: height/25}} className="no_link">{link}</p>
     }
 
     return (

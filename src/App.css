@@ -4,11 +4,15 @@
   --grey: rgb(240,240,240);
   --horizontalMargin: 40px; 
   --boxRadius: 5px;
-  --maxWidth: 1200px;
+  --maxWidth: 1920px;
+}
+
+p {
+  font-size: calc(6px + .5vw);
 }
 
 .App{
-  max-width: 1200px;
+  max-width: 1920px;
   background-color: white;
 }
 
@@ -129,7 +133,7 @@ h4.subtitle {
   justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1920px) {
   h2 {
     font-size: 60px;
   }
@@ -137,11 +141,19 @@ h4.subtitle {
   h4 {
     font-size: 30px;
   }
+  .subtitle_content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 }
 
-@media screen and (orientation: portrait), (max-width: 666px) {
+@media screen and (max-width: 666px) {
   h1, .header_align_left, .header_align_right {
     text-align: center;
+  }
+
+  p {
+    font-size: 12px;
   }
 
   h2 {

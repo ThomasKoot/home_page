@@ -2,6 +2,7 @@ h1.scroll_mobile {
   display: none;
 }
 
+
 .scroll_box {
     height: 300px;
     width : 100%;
@@ -26,6 +27,7 @@ h1.scroll_mobile {
 
   .scroll_icon {
     width: 27%;
+    max-width: 200px;
     margin-right: 60px;
   }
   
@@ -37,7 +39,7 @@ h1.scroll_mobile {
     align-items: center;
   }
 
-  @media screen and (orientation: portrait), (max-width: 666px) {
+  @media screen and (max-width: 666px) {
       .scroll_box{
           width: 100%;
       }
@@ -48,6 +50,7 @@ h1.scroll_mobile {
     
       .scroll_slider_title {
         text-align: left;
+        font-size: 12px;
       }
   }
   
