@@ -6,12 +6,11 @@ import { about } from '../assets/data'
 function About(props) {
 
     return (
-        
         <div className="complete_row about_complete">
             <div className="content_div">
                 <div className="about_container">
                     <div className="about_content">
-                        <h1 className="header_align_left">Hallo</h1>
+                        <h1 className="header_align_left">Hoi,</h1>
                         <p>{about}</p>
                     </div>
                     <div className="about_img_container">

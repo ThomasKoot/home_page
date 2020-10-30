@@ -41,7 +41,7 @@ export const credentials = {
             caption: sd,
         }
     ],
-    eLearning: [
+    ["e-learning"]: [
         {
             strong: "Fullstack Web Development with React",
             p: "Hong Kong University of Science & Technology (Coursera)",
@@ -64,15 +64,15 @@ export const credentials = {
 }
 
 export const about = `
-    Mijn amerikaanse compositiedocent op het Conservatorium gaf mij de bijnaam "Mr. Random", vanwege mijn experimenten waarbij ik geluid en muziek met de computer genereerde. 
-    Iets creëeren met de computer heeft me altijd geboeid. Ik heb veel programmeerd in Reaktor Core, een visuele programmeeromgeving voor DSP-algoritmes. Het afgelopen jaar heb ik mezelf door middel van 
-    e-learning bijschoold tot Javascript/React developer. Na 10 jaar met veel plezier als DJ gewerkt te hebben wil ik me nu op een developer-functie richten. 
+    Mijn amerikaanse compositiedocent op het conservatorium gaf mij de bijnaam "Mr. Random", vanwege mijn experimenten waarbij ik geluid en muziek met de computer genereerde. 
+    Iets creëeren met de computer heeft me altijd geboeid. Ik heb veel programmeerd in Reaktor Core, een visuele programmeeromgeving voor DSP-algoritmes. De afgelopen periode heb ik mezelf door middel van 
+    e-learning bijgeschoold tot JavaScript/React developer. Na 10 jaar met veel plezier als DJ gewerkt te hebben wil ik me nu op een developer-functie richten. 
 `
 
 export const portfolio = [
         {
             title: "Lys",
-            text: "Lys is een interactieve web-applicatie voor het genereren van complexe lissajous curves. De applicatie is gebouwd met een Redux-archtectuur en gebruikt naast de Redux state container alleen vanilla-javascript.",
+            text: "Lys is een interactieve web-applicatie voor het genereren van complexe lissajous curves. De applicatie is gebouwd met een Redux-architectuur en gebruikt naast de Redux state container alleen JavaScript.",
             src: lys_demo,
             key_skills: "Javascript / Redux / SVG-animation",
             link: "http://lys.thomascode.nl"
@@ -86,14 +86,14 @@ export const portfolio = [
         },
         {   
             title: "Pastel Pies",
-            text: "Pastel Pies is een React app voor het maken van pie-charts. Naast React was het een oefening met het gebruik van de Bootstrap library",
+            text: "Pastel Pies is een React app voor het maken van pie-charts. Naast React was het een oefening met het gebruik van de Bootstrap library.",
             src: pastel_pies_demo,
             key_skills: "React / Hooks / Bootstrap",
             link: "http://pastel-pies.thomascode.nl"
         },
         {
             title: "FishSing",
-            text: "Fishsing was mijn afstudeerproject op het conservatorium van Rotterdam. Het is een variatie op een klassiek spel waarbij een vis andere vissen moet ontwijken. In FishSing bestuur je de vis door hoger of lager te zingen. De toonhoogte en volume-herkenning is geschreven in Reaktor Core",
+            text: "FishSing was mijn afstudeerproject op het conservatorium van Rotterdam. Het is een variatie op een klassiek spel waarbij een vis andere vissen moet ontwijken. In FishSing bestuur je de vis door hoger of lager te zingen. De toonhoogte en volume-herkenning is geschreven in Reaktor Core.",
             src: fishsing_demo,
             key_skills: "DSP / Reaktor Core",
             link: "Om FishSing te openen is een Reaktor licentie nodig"

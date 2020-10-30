@@ -14,11 +14,10 @@ function Credentials( { credentials } ) {
 
     function renderTabs(names) {
         return names.map((e, i) => {
-
             return (
                 <div onClick={onClick(i)} 
                     className={selectedString("tab_title", i === selected)}
-                    key={e + i}>{e}</div>
+                    key={e + i}><h5><strong>{e}</strong></h5></div>
             )
         })
     }
