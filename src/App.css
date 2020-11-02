@@ -92,7 +92,6 @@ h4.subtitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
 
 .about_img_container {
@@ -115,6 +114,7 @@ h4.subtitle {
   flex-direction: column;
   height: 100%;
   width: 80%;
+  max-width: 800px;
   text-align: left;
   color: white;
   font-size: 12px;
