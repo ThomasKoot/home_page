@@ -2,6 +2,55 @@ h1.scroll_mobile {
   display: none;
 }
 
+.pcb_container {
+  height: 250px;
+  width: 250px;
+  cursor: none;
+}
+
+g.pcb {
+  opacity: 1;
+  transition: .4s;
+}
+
+g.pcb_hover {
+  opacity: 0;
+  transition: none;
+}
+
+p.pcb_reset {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 7px 13px 10px 13px;
+  border-radius: var(--boxRadius);
+  border: 1.5px solid white;
+}
+
+p.pcb_reset:hover {
+  border: 1.5px solid var(--baksteen);
+}
+
+div.pcb_reset {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+line.pcb {
+  fill: none;
+  stroke: var(--baksteen);
+  stroke-width: .8;
+  stroke-dasharray: 40;
+  transition: 1s;
+}
+
+circle.pcb {
+  fill: var(--jasje);
+  stroke-width: .4;
+  stroke: white;
+  transition: opacity .3s;
+}
 
 .scroll_box {
     height: 300px;
@@ -51,6 +100,10 @@ h1.scroll_mobile {
       .scroll_slider_title {
         text-align: left;
         font-size: 12px;
+      }
+
+      .pcb_section {
+        display: none;
       }
   }
   

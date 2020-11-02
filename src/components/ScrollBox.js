@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import { useState, useRef, useEffect } from 'react'
 import { pctString, grayScale } from '../utility'
 import { baksteen } from '../style_constants'
 import skills_icon from '../assets/skills_icon.png'
+import PCB from './PCB/PCB'
 
 // the scrollbox component renders a scrollbox based on a data prop in the following format:
 // {name: "example", value: "23%"}. The width of the sliders is set when the scrollbox comes in view.
@@ -72,12 +73,11 @@ function ScrollBox ({ data }) {
     
     const [isViewed, setIsViewed] = useState(false);
     const ref = useRef();
+    const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const inView = () => ref.current.getBoundingClientRect().top < window.innerHeight;
-        
         let cleanUp = () => window.removeEventListener('scroll', handleScroll);
-
         function handleScroll() {
             if (inView()) {
                 setIsViewed(true);
@@ -85,7 +85,6 @@ function ScrollBox ({ data }) {
                 cleanUp = undefined;
             }
         }
-
         window.addEventListener('scroll', handleScroll);
         return cleanUp;
     },[])
@@ -96,7 +95,9 @@ function ScrollBox ({ data }) {
         <div className="complete_row scroll_complete">
             <div className="content_div scroll_content">
                 <h1 className="scroll_mobile">Skills</h1>
-                <img src={skills_icon} className="scroll_icon" alt="brains"/>
+                {isMobile ? null : <PCB isViewed={isViewed}/>}
+                
+                {/* <img src={skills_icon} className="scroll_icon" alt="brains"/> */}
                 <div className="scroll_icon_container" >
                     <h1 className="header_align_right scroll_big">Skills</h1>
                     <div className="scroll_box" ref={ref}>
