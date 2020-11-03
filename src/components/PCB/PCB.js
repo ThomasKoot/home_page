@@ -50,7 +50,7 @@ function PCB(props) {
             setLines(lines => [...lines, {x: trace[0][0], y: trace[0][1], endX, endY}])
         }
 
-        timeoutId.current = setTimeout(addLine, 20)
+        timeoutId.current = setTimeout(addLine, 13)
     }, [lines, props.isViewed, isMobile])
 
     function initialize() {
