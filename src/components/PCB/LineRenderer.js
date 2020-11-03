@@ -21,11 +21,14 @@ function LineRenderer({ gridSize, lines, radius, mousePos }) {
                     false) :
                 false;
 
-        const lineStyle = { strokeDashoffset: isLast ? 40 : 0 }
 
-        const gClassName = mouseOver ? "pcb pcb_hover" : "pcb"
-
+        const length = dist({x: x1, y: y1}, {x: x2, y: y2})
+        const lineStyle = { strokeDashoffset: isLast ? length : 0,
+                            strokeDasharray: length
+                        }
+        const circleStyle = {opacity: isLast ? 0 : 1}
         
+        const gClassName = mouseOver ? "pcb pcb_hover" : "pcb"
 
         return (
             <g key={"" + e.x + e.endX + i} className={gClassName}>
@@ -33,8 +36,8 @@ function LineRenderer({ gridSize, lines, radius, mousePos }) {
                         x1={x1} y1={y1} x2={x2} y2={y2}
                         style={lineStyle}
                         />
-                <circle className="pcb" cx={e.x * mult} cy={e.y * mult} r={radius}/>
-                <circle className="pcb" cx={e.endX * mult} cy={e.endY * mult} r={radius}/>
+                <circle style={circleStyle} className="pcb start" cx={e.x * mult} cy={e.y * mult} r={radius}/> 
+                <circle style={circleStyle} className="pcb end" cx={e.endX * mult} cy={e.endY * mult} r={radius}/> 
             </g>
         )
     })

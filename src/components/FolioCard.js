@@ -39,7 +39,7 @@ function FolioCard( { data, selected, selectCallback, isMobile }) {
                 <p style={pStyle}>{key_skills}</p>
                 {RenderLink(link)}
             </div>
-            <img src={src} className={selectedString("portfolio", selected)}/>
+            <img src={src} alt={title}className={selectedString("portfolio", selected)}/>
         </div>
     )
 }

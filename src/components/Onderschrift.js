@@ -1,6 +1,4 @@
-import React, { useRef, useLayoutEffect } from 'react';
-
-
+import React from 'react';
 
 function Onderschrift() {  
 
