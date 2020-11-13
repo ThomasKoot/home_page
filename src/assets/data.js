@@ -2,7 +2,7 @@ import { med, bmus, bed, dj, docent, sd, reactCourse, mathCourse, awsCourse } fr
 import linear_regression_demo from '../assets/linear_regression_demo.jpg'
 import lys_demo from '../assets/lys_demo.jpg';
 import fishsing_demo from '../assets/fishsing_demo.jpg'
-import pastel_pies_demo from '../assets/pastel_pies_demo.jpg'
+import bezier_demo from '../assets/bezier_demo.jpg'
 
 export const credentials = {
     titels: [ 
@@ -70,7 +70,7 @@ export const about = `
 export const portfolio = [
         {
             title: "Lys",
-            text: "Lys is een interactieve web-applicatie voor het genereren van complexe lissajous curves. De applicatie is gebouwd met een Redux-architectuur en gebruikt naast de Redux state container alleen JavaScript.",
+            text: "Lys is een interactieve web-app voor het genereren van complexe lissajous curves. De applicatie is gebouwd met een Redux-architectuur en gebruikt naast de Redux state container alleen JavaScript.",
             src: lys_demo,
             key_skills: "Javascript / Redux / SVG-animation",
             link: "http://lys.thomascode.nl"
@@ -83,11 +83,11 @@ export const portfolio = [
             link: "http://linear-regression.thomascode.nl"
         },
         {   
-            title: "Pastel Pies",
-            text: "Pastel Pies is een React app voor het maken van pie-charts. Naast React was het een oefening met het gebruik van de Bootstrap library.",
-            src: pastel_pies_demo,
-            key_skills: "React / Hooks / Bootstrap",
-            link: "http://pastel-pies.thomascode.nl"
+            title: "Big Beziers",
+            text: "Big Beziers is een interactieve web-app voor visualiseren van bezier-curves. De app maakt gebruik van het HTML-canvas in React, en bevat een aantal custom SVG UI-elementen.",
+            src: bezier_demo,
+            key_skills: "React / Styled Components / Responsive Design",
+            link: "http://bezier.thomascode.nl"
         },
         {
             title: "FishSing",
