@@ -14,14 +14,12 @@ p.dropdown_item_body {
     margin-left: 3%;
     margin-right: 3%;
     color: black;
-  }
+}
   
 p.dropdown_item_body_selected {
     opacity: 1;
     transition: .4s;
     transition-delay: .4s;
-    margin-left: 3%;
-    margin-right: 3%;
 }
   
 p.dropdown_item_head {

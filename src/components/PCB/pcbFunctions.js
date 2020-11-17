@@ -46,27 +46,33 @@ export function testSegment(segment, grid) {
                     calculateTrace(segment)
 }
 
-export function generateRandomSegment(grid, trace, count = 0) {
+export function generateRandomSegment(grid, trace) {
 
-    let x;
-    let y;
+    let segment = false;
+    let count = 0;
 
-    if (trace) {
-        x = trace.points[trace.points.length-1][0];
-        y = trace.points[trace.points.length-1][1];
-    } else {
-        const gridSize = grid.length;
-        const angle = Math.random() * 2 * Math.PI;
-        const magnitude = Math.random()
-        x = Math.floor(Math.sin(angle) * magnitude * (.5 * (gridSize -2)) + .5 * gridSize)
-        y = Math.floor(Math.cos(angle) * magnitude * (.5 * (gridSize -2)) + .5 * gridSize)
+    while(count < 10000 && (!segment)) {
+        let x;
+        let y;
+
+        if (trace) {
+            x = trace.points[trace.points.length-1][0];
+            y = trace.points[trace.points.length-1][1];
+        } else {
+            const gridSize = grid.length;
+            const angle = Math.random() * 2 * Math.PI;
+            const magnitude = Math.random()
+            x = Math.floor(Math.sin(angle) * magnitude * (.5 * (gridSize -2)) + .5 * gridSize)
+            y = Math.floor(Math.cos(angle) * magnitude * (.5 * (gridSize -2)) + .5 * gridSize)
+        }
+
+        const direction = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"][randomN(8)];
+        const length = randomN(8) + 2;
+        segment = testSegment({x,y,direction,length}, grid)
+        count += 1
     }
 
-    const direction = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"][randomN(8)];
-    const length = randomN(8) + 2;
-    const segment = testSegment({x,y,direction,length}, grid)
-    if (count > 10000) return false 
-    return segment ? segment : generateRandomSegment(grid, trace ? trace : undefined, count + 1)
+    return segment ? segment : false
 }
 
 export function initGrid(n) {
