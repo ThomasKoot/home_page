@@ -22,6 +22,20 @@ function Pill ({data}) {
         }
     }
 
+    function renderLinks(links) {
+        return (<>
+                    <br/>
+                    {links.map(e => {
+                        return (<React.Fragment key={e.name}>
+                                    <br/>
+                                    <a href={e.href}>{e.name}</a> 
+                                </React.Fragment>
+                        )
+                    })}
+                </>
+        )
+    }
+
     return (
         <>
         {data.map((e, i) => {
@@ -37,6 +51,7 @@ function Pill ({data}) {
                     style={inView ? subTextStyle : {height:0}}>
                     <p className={selectedString("dropdown_item_body", inView)} ref={inView ? p : undefined}>
                         {e.caption} <br></br><br></br> {e.key_skills ? e.key_skills : ""}
+                        {e.links ? renderLinks(e.links) : ""}
                     </p>
                 </div>
             </div>

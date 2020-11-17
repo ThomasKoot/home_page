@@ -44,19 +44,52 @@ export const credentials = {
             strong: "Fullstack Web Development with React",
             p: "Hong Kong University of Science & Technology (Coursera)",
             caption: reactCourse.text,
-            key_skills: reactCourse.key_skills
+            key_skills: reactCourse.key_skills,
+            links: [
+                {
+                    name: "Front-End Web Development With React",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/GG9NBLRAT8BU"
+                },{
+                    name: "Server-side Development with NodeJS, Express and MongoDB",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/UL76RHPUGLWW"
+                }, {
+                    name: "Front-End Web UI Frameworks and Tools: Bootstrap 4",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/44LGZQ8ZQB7U"
+                }
+            ]
         },
         {
             strong: "Mathematics for Machine Learning",
             p: "Imperial College London (Coursera)",
             caption: mathCourse.text,
             key_skills: mathCourse.key_skills,
+            links: [
+                {
+                    name: "Mathematics for Machine Learning: Linear Algebra",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/2QFSWCTFJJV5"
+                },{
+                    name: "Mathematics for Machine Learning: Multivariate Calculus",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/B59TQRDWUGZ7"
+                }, {
+                    name: "Matrix Algebra for Engineers",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/C2VPAG7BHTPR"
+                }
+            ]
         },
         {
             strong: "Building Modern Node Applications on AWS",
             p: "AWS (Coursera)",
             caption: awsCourse.text,
             key_skills: awsCourse.key_skills,
+            links: [
+                {
+                    name: "AWS Fundamentals: Going Cloud-Native",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/CBGCWZ6GCJDR"
+                },{
+                    name: "AWS Fundamentals: Building Serverless Applications",
+                    href: "https://www.coursera.org/account/accomplishments/certificate/RXUH5ZM5S3KH"
+                }
+            ]
         }
     ],
 }
