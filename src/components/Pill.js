@@ -28,7 +28,7 @@ function Pill ({data}) {
                     {links.map(e => {
                         return (<React.Fragment key={e.name}>
                                     <br/>
-                                    <a href={e.href}>{e.name}</a> 
+                                    <a href={e.href} target={'_blank'}>{e.name}</a> 
                                 </React.Fragment>
                         )
                     })}
@@ -50,8 +50,16 @@ function Pill ({data}) {
                 <div className={selectedString("dropdown_item_body_container", inView)}
                     style={inView ? subTextStyle : {height:0}}>
                     <p className={selectedString("dropdown_item_body", inView)} ref={inView ? p : undefined}>
-                        {e.caption} <br></br><br></br> {e.key_skills ? e.key_skills : ""}
-                        {e.links ? renderLinks(e.links) : ""}
+                        {e.caption} <br></br><br></br> 
+                        {e.key_skills && e.key_skills}
+                        {e.links && renderLinks(e.links)}
+                        {e.img && (
+                            <div style={{display: 'flex', justifyContent: 'center'}}>
+                            <a style={{cursor: 'pointer'}} href={e.imgLink} target='_blank'>
+                                <img className='badge' src={e.img} />
+                            </a>
+                        </div>
+                        )}
                     </p>
                 </div>
             </div>

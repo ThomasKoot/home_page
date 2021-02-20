@@ -23,6 +23,15 @@ p {
   background-image: url('./assets/pattern_white_overlay.png');
 }
 
+.badge{
+  width: 10vw;
+  height: 10vw;
+  min-width: 75px;
+  min-height: 75px;
+  margin-top: 10px;
+  cursor: 'pointer';
+}
+
 html {
   scroll-behavior: smooth;
 }

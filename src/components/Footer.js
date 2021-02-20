@@ -15,7 +15,7 @@ function Footer() {
                     <Social link={gitHubLink} alt="gitHubLogo" source={gitHubLogo} text="bekijk mijn projecten op GitHub"/>
                     <Social link={linkedInLink} alt="linkedInLogo" source={linkedInLogo} text="bekijk mijn volledige CV op LinkedIn"/>
                     <div className="footer_bottom">
-                        <p onClick={() => window.scrollTo(0,0)}>© thomas code 2020</p>
+                        <p onClick={() => window.scrollTo(0,0)}>© thomas code 2021</p>
                     </div>
                 </div>
             </div>

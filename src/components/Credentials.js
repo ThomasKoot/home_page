@@ -31,7 +31,7 @@ function Credentials( { credentials } ) {
                         {renderTabs(Object.keys(credentials))}
                     </div>
                     <div className="tab_content" >
-                        <Pill data={credentials[Object.keys(credentials)[selected]]}/>
+                        <Pill key={selected} data={credentials[Object.keys(credentials)[selected]]}/>
                     </div>
                 </div>
             </div>

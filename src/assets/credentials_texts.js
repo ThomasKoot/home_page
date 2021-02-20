@@ -3,10 +3,10 @@ export const med = `
 `
 
 export const bmus = `
-    Major in Media Music, minor in Sound Design en MultiMedia. 
-    Extra minor AudioVisual design aan de AKI Enschede. 
-    Extra vakken Object Oriented Programming en Calculus aan de Universiteit Twente.
-    6 maanden stage bij Arturia Hardware & Software in Grenoble, Frankrijk.
+    Afgestudeerd met specialisatie in Sound Design en Digital Signal Processing. 
+    \nExtra minor AudioVisual design aan de AKI Enschede. 
+    \nExtra vakken Object Oriented Programming en Calculus aan de Universiteit Twente.
+    \n6 maanden stage bij Arturia Hardware & Software in Grenoble, Frankrijk.
 `
 
 export const bed = `
@@ -21,16 +21,12 @@ export const dj = `
 `
 
 export const docent = `
-    Tussen 2012 en 2018 gaf ik twee dagen per week les aan het ArtEZ Conservatorium Enschede voor de opleiding Media Music. Ik gaf de vakken sound design en ear-training.
+    Tussen 2012 en 2018 gaf ik twee dagen per week les aan het ArtEZ Conservatorium Enschede voor de opleiding Media Music. Ik ga de vakken Sound Design en Solfege.
 `
 
 export const sd = `
-    Ik heb voor verschillende software-synthesizers presets geprogrammeerd, daarbij was ik regelmatig betrokken bij de testfase van het ontwikkeltraject. Je kunt mijn geluiden onder andere vinden in FM8 en Reaktor van Native Instruments, en Pigments en Synclavier V van Arturia. 
+    Voor verschillende internationale bedrijven in de muzieksoftware programmeer ik synthesizers. Mijn geluiden zijn onder meer te horen in synthesizers van Native Instruments en Arturia.
 `
-export const awsCourse = {
-    text: `Na de AWS Fundamentals specialisatie heb ik me in deze course verder verdiept in het AWS serverless aanbod. Deze site is ontwikkeld op AWS-Amplify, en de gelinkte sites uit het portfolio zijn gehost op Amazon S3`,
-    key_skills: "AWS-serverless / AWS-Lambda / NodeJS"
-}
 
 export const reactCourse = {
     text: `Specialisatie gericht op React, NodeJS, Express en Bootstrap. Veel zaken die ik hiervan heb geleerd komen terug in deze site, die volledig in React is gemaakt.`,
@@ -41,3 +37,5 @@ export const mathCourse = {
     text: `Specialisatie in lineare algebra en vector calculus. Daarnaast heb ik Matrix Algebra for Engineers op Coursera afgerond. Naar aanleiding van deze input heb ik een aantal applicaties gemaakt die gebruik maken van lineare algebra. Linear Regression uit mijn portfolio is er daar één van.`,
     key_skills: "Python / Linear Algebra",
 }
+
+export const aws = `Medior-level certificering voor het ontwikkelen van applicaties op het AWS platform.`

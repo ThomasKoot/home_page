@@ -1,13 +1,21 @@
-import { med, bmus, bed, dj, docent, sd, reactCourse, mathCourse, awsCourse } from './credentials_texts'
+import { med, bmus, aws, bed, dj, docent, sd, reactCourse, mathCourse, awsCourse } from './credentials_texts'
 import linear_regression_demo from '../assets/linear_regression_demo.jpg'
 import lys_demo from '../assets/lys_demo.jpg';
 import fishsing_demo from '../assets/fishsing_demo.jpg'
 import bezier_demo from '../assets/bezier_demo.jpg'
+import awsBadge from './aws-dac-badge.png';
 
 export const credentials = {
     titels: [ 
         {
-            strong: "Bachelor of Music (Media Music)",
+            strong: 'AWS Developer Associate',
+            p: 'Amazon Web Services',
+            caption: aws,
+            img: awsBadge,
+            imgLink: 'https://www.youracclaim.com/badges/5b4da38f-3969-4996-926b-4ab4b3aad06b/public_url'
+        },
+        {
+            strong: "Music Technology (Bachelor of Music)",
             p: "ArtEZ Conservatorium Enschede",
             caption: bmus,
         },
@@ -29,14 +37,24 @@ export const credentials = {
             caption: dj,
         },
         {
-            strong: "HBO Docent Media Music",
+            strong: "HBO Docent Sound Design",
             p: "ArtEZ Conservatorium Enschede",
             caption: docent,
         },
         {
-            strong: "Sound Designer / Beta Tester",
+            strong: "Sound Designer",
             p: "Arturia / Native Instruments",
             caption: sd,
+            links: [
+                {
+                    name: "Arturia Pigments",
+                    href: "https://www.arturia.com/products/analog-classics/pigments/sounddesign"
+                },{
+                    name: "Native Instruments FM8",
+                    href: "https://www.native-instruments.com/en/products/komplete/synths/fm8/"
+                } 
+
+            ]
         }
     ],
     ["e-learning"]: [
@@ -73,21 +91,6 @@ export const credentials = {
                 }, {
                     name: "Matrix Algebra for Engineers",
                     href: "https://www.coursera.org/account/accomplishments/certificate/C2VPAG7BHTPR"
-                }
-            ]
-        },
-        {
-            strong: "Building Modern Node Applications on AWS",
-            p: "AWS (Coursera)",
-            caption: awsCourse.text,
-            key_skills: awsCourse.key_skills,
-            links: [
-                {
-                    name: "AWS Fundamentals: Going Cloud-Native",
-                    href: "https://www.coursera.org/account/accomplishments/certificate/CBGCWZ6GCJDR"
-                },{
-                    name: "AWS Fundamentals: Building Serverless Applications",
-                    href: "https://www.coursera.org/account/accomplishments/certificate/RXUH5ZM5S3KH"
                 }
             ]
         }
