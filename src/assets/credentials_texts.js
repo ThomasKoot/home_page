@@ -3,7 +3,7 @@ export const med = `
 `
 
 export const bmus = `
-    Afgestudeerd met specialisatie in Sound Design en Digital Signal Processing. 
+    Afgestudeerd met specialisatie in Digital Signal Processing en Sound Design. 
     \nExtra minor AudioVisual design aan de AKI Enschede. 
     \nExtra vakken Object Oriented Programming en Calculus aan de Universiteit Twente.
     \n6 maanden stage bij Arturia Hardware & Software in Grenoble, Frankrijk.

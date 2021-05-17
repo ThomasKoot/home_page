@@ -32,16 +32,6 @@ export const credentials = {
     ],
     werk: [
         {
-            strong: "DJ",
-            p: "Verschillende venues in binnen en buitenland",
-            caption: dj,
-        },
-        {
-            strong: "HBO Docent Sound Design",
-            p: "ArtEZ Conservatorium Enschede",
-            caption: docent,
-        },
-        {
             strong: "Sound Designer",
             p: "Arturia / Native Instruments",
             caption: sd,
@@ -55,6 +45,16 @@ export const credentials = {
                 } 
 
             ]
+        },
+        {
+            strong: "DJ",
+            p: "Verschillende venues in binnen en buitenland",
+            caption: dj,
+        },
+        {
+            strong: "HBO Docent Sound Design",
+            p: "ArtEZ Conservatorium Enschede",
+            caption: docent,
         }
     ],
     ["e-learning"]: [
@@ -99,8 +99,7 @@ export const credentials = {
 
 export const about = `
     Mijn amerikaanse compositiedocent op het conservatorium gaf mij de bijnaam "Mr. Random", vanwege mijn experimenten waarbij ik geluid en muziek met de computer genereerde. 
-    Iets creëeren met de computer heeft me altijd geboeid. Ik heb veel programmeerd in Reaktor Core, een visuele programmeeromgeving voor DSP-algoritmes. De afgelopen periode heb ik mezelf door middel van 
-    e-learning bijgeschoold tot JavaScript/React developer. Na 10 jaar met veel plezier als DJ gewerkt te hebben wil ik me nu op een developer-functie richten. 
+    Iets creëeren met de computer heeft me altijd geboeid. Ik heb veel programmeerd in Reaktor Core, een visuele programmeeromgeving voor DSP-algoritmes. De afgelopen periode heb ik mezelf omgeschoold tot Javascript/NodeJS developer. Na 10 met veel plezier in de electronische muziek te hebben wil ik me nu op een developer-functie richten. 
 `
 
 export const portfolio = [

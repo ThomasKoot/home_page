@@ -30,6 +30,7 @@ p {
   min-height: 75px;
   margin-top: 10px;
   cursor: 'pointer';
+  margin: 10px;
 }
 
 html {

@@ -22,12 +22,11 @@ function App() {
   }, [])
 
   const data = [
-    {name: "JavaScript", value: "85%"},
-    {name: "React", value: "70%"},
-    {name: "AWS", value: "60%"},
-    {name: "HTML/CSS", value: "80%"},
-    {name: "NodeJS", value: "50%"},
+    {name: "JavaScript", value: "80%"},
+    {name: "AWS", value: "75%"},
+    {name: "Linux", value: "50%"},
     {name: "Python", value: "30%"},
+    {name: "React", value: "70%"},
   ]
 
   return (
